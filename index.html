@@ -35,20 +35,40 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Javascript code.-->
 <script>
-	var exampleVariable1 = 0;
-	var exampleVariable2 = 0;
-	var exampleVariable3 = 0;
+	var Variable1 = 0;
+	var Variable2 = 0;
+	var Variable3 = 0;
+	var Variable4 = 0;
+	var Variable5 = 0;
+	var Variable6 = 0;
+	var Variable7 = 0;
+	var Variable8 = 0;
+	var FinalVariable = 0;
 	
-	function exampleFunction1()
+	function sumvariables()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+    		Variable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		Variable2 = parseFloat(document.getElementById("secondInputBox").value);
+		Variable3 = parseFloat(document.getElementById("thirdInputBox").value);
+    		Variable4 = parseFloat(document.getElementById("fourthInputBox").value);
+		Variable5 = parseFloat(document.getElementById("fifthInputBox").value);
+    		Variable6 = parseFloat(document.getElementById("SixthInputBox").value);
+		Variable7 = parseFloat(document.getElementById("SeventhInputBox").value);
+		Variable8 = parseFloat(document.getElementById("EighthInputBox").value);
 		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
+		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8
 		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
+		if(result >= 25) {
+			document.getElementById("output").innerHTML = "You are very introverted"
+		console.log("Function was run."); 
+		} else if (result >50) {
+			document.getElementById("output").innerHTML = "You are moderately introverted"
+		} else if (result <50) {
+			document.getElementById("output").innerHTML = "You are moderately extroverted"
+		} else if (result =<50) {
+			document.getElementById("output").innerHTML = "You are very extroverted."
+		}
 	}
 	
 	function exampleFunction2()
