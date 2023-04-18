@@ -46,8 +46,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
     		Variable1 = parseFloat(document.getElementById("Question1").value);
-    		Variable2 = parseFloat(document.getElementById("secondInputBox").value);
-		Variable3 = parseFloat(document.getElementById("thirdInputBox").value);
+    		Variable2 = parseFloat(document.getElementById("Question2").value);
+		Variable3 = parseFloat(document.getElementById("Question3").value);
     		Variable4 = parseFloat(document.getElementById("fourthInputBox").value);
 		Variable5 = parseFloat(document.getElementById("fifthInputBox").value);
 		
@@ -171,14 +171,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <input type="radio" id="Question2" value="0">I don't talk because I overthink my words<br>
   <input type="radio" id="Question2" value="2.5">I usually think before speaking, unless I am with friends or someone that I am comfortable with br>
   <input type="radio" id="Question2" value="5">It really just depends on the context<br>
-  <input type="radio" id="Question2" value="7.5"Not much if at all.<br>
+  <input type="radio" id="Question2" value="7.5">Not much if at all.<br>
   <input type="radio" id="Question2" value="10">Never! Why would I do that?<br>
 </form>
 		
 		<br><br><br>
 	</form>
       
-  <a href="#three" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
+  <a href="#three" onclick="exampleFunction1();" class="w3-btn w3-grey">Easy! Next one!</a>
     
   </center>
 	  </div>  
@@ -192,16 +192,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
     	<div id="content2" class="w3-container">
-        	<p>QUESTION 1 GOES HERE</p>    
+        	<p>Let's say you're experiencing an emotional dilemma. How do you usually prefer to approach it?</p>    
     	</div>
 	
 	<!--Form element. This allows for user input in HTML.-->
 <form>
-  <input type="radio" id="Question3" value="0">They make me exhausted; I usually want to leave immediately<br>
-  <input type="radio" id="Question3" value="2.5">They make me a little tired, but I can usually tolerate it<br>
-  <input type="radio" id="Question3" value="5">They do not really affect me<br>
-  <input type="radio" id="Question3" value="7.5">They make me feel pretty alert and awake<br>
-  <input type="radio" id="Question3" value="10">I never feel more alive and energetic than when at social events<br>
+  <input type="radio" id="Question3" value="0">I prefer to spend time alone and think it through by myself<br>
+  <input type="radio" id="Question3" value="3">I like to think about it and occasionally ask some people for their opinions<br>
+  <input type="radio" id="Question3" value="6">I usually rely on my friends for some advice<br>
+  <input type="radio" id="Question3" value="10">I absolutely NEED to be surrounded by friends and hear what they have to say<br>
 </form>	
 		<br><br><br>
 	</form>
@@ -214,7 +213,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Fourth Subpage-->
 <div id="four" class="page">
 	<div id="header2" class="w3-container w3-green">
-		<h1>last question</h1>
+		<h1>4th Question</h1>
 	</div>
 	
   <center>
@@ -222,17 +221,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content2" class="w3-container">
         	<p>QUESTION 1 GOES HERE</p>    
     	</div>
-	
-	<!--Form element. This allows for user input in HTML.-->
-	<form>
-  <input type="radio" id="Question4" value="0">They make me exhausted; I usually want to leave immediately<br>
-  <input type="radio" id="Question4" value="2.5">They make me a little tired, but I can usually tolerate it<br>
-  <input type="radio" id="Question4" value="5">They do not really affect me<br>
-  <input type="radio" id="Question4" value="7.5">They make me feel pretty alert and awake<br>
-  <input type="radio" id="Question4" value="10">I never feel more alive and energetic than when at social events<br>
+	  
+<form action="">
+  <input type="number" max="10" min="1" required />
+  <button>submit</button>
 </form>
-		<br><br><br>
-	</form>
       
   <a href="#five" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
     
@@ -253,13 +246,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 	<form>
-<form>
-  <input type="radio" id="Question5" value="0">They make me exhausted; I usually want to leave immediately<br>
-  <input type="radio" id="Question5" value="2.5">They make me a little tired, but I can usually tolerate it<br>
-  <input type="radio" id="Question5" value="5">They do not really affect me<br>
-  <input type="radio" id="Question5" value="7.5">They make me feel pretty alert and awake<br>
-  <input type="radio" id="Question5" value="10">I never feel more alive and energetic than when at social events<br>
-</form>
+
 		<br><br><br>
 	</form>
       
