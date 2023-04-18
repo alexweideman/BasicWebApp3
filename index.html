@@ -59,44 +59,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8
 		
-		if(result >= 25) {
+		if(FinalVariable >= 25) {
 			document.getElementById("output").innerHTML = "You are very introverted"
 		console.log("Function was run."); 
-		} else if (result >50) {
+		} else if (FinalVariable >50) {
 			document.getElementById("output").innerHTML = "You are moderately introverted"
-		} else if (result <50) {
+		} else if (FinalVariable <50) {
 			document.getElementById("output").innerHTML = "You are moderately extroverted"
-		} else if (result =<50) {
+		} else if (FinalVariable =<50) {
 			document.getElementById("output").innerHTML = "You are very extroverted."
 		}
-	}
-	
-	function exampleFunction2()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 * exampleVariable2;
-		
-		alert("You just ran a multiplication function!");
-		console.log("Multiplication function was run.");
-	}
-	
-	function exampleFunction3()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
-	}
-	
-	function exampleResultsFunction()
-	{
-		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
-		resetVariables();
 	}
 	
 	function resetVariables()
@@ -105,9 +77,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable2 = 0;
 		exampleVariable3 = 0;
 	}
+	
 </script>
-  
-  
+	
  
 <!--CSS webpage style/format settings.-->
 <style>	
@@ -139,13 +111,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <!--Landing page content.-->
   <div id="content" class="w3-container">
   	<!--Header!-->
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>APP NAME GOES HERE</h1>
+	<div id="header" class="w3-container w3-peter-river">
+		<h1>Introversion/Extroversion Personality Calculator</h1>
 	</div>
 	
-	  <p>INTRODUCTION/DESCRIPTION OF APP GOES HERE</p>
+	  <p>Welcome to the Introversion/Extroversion Personality Caculator! This was programmed in order to solve your burning question: Am I an extrovert, or am I an introvert?</p>
 	
-	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
+	  <a href="#one" class="w3-btn w3-green w3-round">Get Started!</a>
 	
 	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
   
