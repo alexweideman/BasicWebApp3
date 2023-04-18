@@ -40,22 +40,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var Variable3 = 0;
 	var Variable4 = 0;
 	var Variable5 = 0;
-	var Variable6 = 0;
-	var Variable7 = 0;
-	var Variable8 = 0;
 	var FinalVariable = 0;
 	
 	function sumvariables()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		Variable1 = parseFloat(document.getElementById("Question1").value);
     		Variable2 = parseFloat(document.getElementById("secondInputBox").value);
 		Variable3 = parseFloat(document.getElementById("thirdInputBox").value);
     		Variable4 = parseFloat(document.getElementById("fourthInputBox").value);
 		Variable5 = parseFloat(document.getElementById("fifthInputBox").value);
-    		Variable6 = parseFloat(document.getElementById("SixthInputBox").value);
-		Variable7 = parseFloat(document.getElementById("SeventhInputBox").value);
-		Variable8 = parseFloat(document.getElementById("EighthInputBox").value);
 		
 		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8
 		
@@ -145,16 +139,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 <form>
-  <input type="radio" name="Question1" value="0">They make me exhausted; I usually want to leave immediately<br>
-  <input type="radio" name="Question1" value="2.5">They make me a little tired, but I can usually tolerate it<br>
-  <input type="radio" name="Question1" value="5">They do not really affect me<br>
-  <input type="radio" name="Question1" value="7.5">They make me feel pretty alert and awake<br>
-  <input type="radio" name="Question1" value="10">I never feel more alive and energetic than when at social events<br>
+  <input type="radio" id="Question1" value="0">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" id="Question1" value="2.5">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" id="Question1" value="5">They do not really affect me<br>
+  <input type="radio" id="Question1" value="7.5">They make me feel pretty alert and awake<br>
+  <input type="radio" id="Question1" value="10">I never feel more alive and energetic than when at social events<br>
 </form>
 		<br><br><br>
 	</form>
       
-  <a href="#two" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
+  <a href="#two" onclick="exampleFunction1();" class="w3-btn w3-grey">Next Question!</a>
     
   </center>
 	  </div>  
@@ -168,19 +162,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
     	<div id="content2" class="w3-container">
-        	<p>QUESTION 1 GOES HERE</p>    
+        	<p>How much do you think before speaking</p>    
     	</div>
 	
 	<!--Form element. This allows for user input in HTML.-->
-	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
+	  
+<form>
+  <input type="radio" id="Question2" value="0">I don't talk because I overthink my words<br>
+  <input type="radio" id="Question2" value="2.5">I usually think before speaking, unless I am with friends or someone that I am comfortable with br>
+  <input type="radio" id="Question2" value="5">It really just depends on the context<br>
+  <input type="radio" id="Question2" value="7.5"Not much if at all.<br>
+  <input type="radio" id="Question2" value="10">Never! Why would I do that?<br>
+</form>
 		
 		<br><br><br>
 	</form>
@@ -203,16 +196,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 	
 	<!--Form element. This allows for user input in HTML.-->
-	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
-		
+<form>
+  <input type="radio" id="Question3" value="0">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" id="Question3" value="2.5">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" id="Question3" value="5">They do not really affect me<br>
+  <input type="radio" id="Question3" value="7.5">They make me feel pretty alert and awake<br>
+  <input type="radio" id="Question3" value="10">I never feel more alive and energetic than when at social events<br>
+</form>	
 		<br><br><br>
 	</form>
       
@@ -235,15 +225,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
-		
+  <input type="radio" id="Question4" value="0">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" id="Question4" value="2.5">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" id="Question4" value="5">They do not really affect me<br>
+  <input type="radio" id="Question4" value="7.5">They make me feel pretty alert and awake<br>
+  <input type="radio" id="Question4" value="10">I never feel more alive and energetic than when at social events<br>
+</form>
 		<br><br><br>
 	</form>
       
@@ -266,15 +253,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
-		
+<form>
+  <input type="radio" id="Question5" value="0">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" id="Question5" value="2.5">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" id="Question5" value="5">They do not really affect me<br>
+  <input type="radio" id="Question5" value="7.5">They make me feel pretty alert and awake<br>
+  <input type="radio" id="Question5" value="10">I never feel more alive and energetic than when at social events<br>
+</form>
 		<br><br><br>
 	</form>
       
@@ -296,16 +281,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 	
 	<!--Form element. This allows for user input in HTML.-->
-	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
-		
+<form>
+  <input type="radio" id="Question1" value="0">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" id="Question1" value="2.5">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" id="Question1" value="5">They do not really affect me<br>
+  <input type="radio" id="Question1" value="7.5">They make me feel pretty alert and awake<br>
+  <input type="radio" id="Question1" value="10">I never feel more alive and energetic than when at social events<br>
+</form>
 		<br><br><br>
 	</form>
       
