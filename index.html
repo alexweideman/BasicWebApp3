@@ -51,24 +51,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     		Variable4 = parseFloat(document.getElementById("Question4").value);
 		Variable5 = parseFloat(document.getElementById("Question5").value);
 		
-		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5
+		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5; 
 		
-	]
+	}
 	
 	function printResults() 
 	{
 		
 		if(FinalVariable <= 10) {
-			document.getElementById("output").innerHTML = "You are very introverted"
+			document.getElementById("output").innerHTML = "You are very introverted";
 		console.log("Function was run."); 
 		} else if (FinalVariable <=20) {
-			document.getElementById("output").innerHTML = "You are moderately introverted"
+			document.getElementById("output").innerHTML = "You are moderately introverted";
 		} else if (FinalVariable <30) {
-			document.getElementById("output").innerHTML = "Surprise! You are an ambivert, which is somewhere in between!"
+			document.getElementById("output").innerHTML = "Surprise! You are an ambivert, which is somewhere in between!";
 		} else if (FinalVariable >=30) {
-			document.getElementById("output").innerHTML = "You are moderately extroverted"
+			document.getElementById("output").innerHTML = "You are moderately extroverted";
 		} else if (FinalVariable >=40) {
-			document.getElementById("output").innerHTML = "You are very extroverted."
+			document.getElementById("output").innerHTML = "You are very extroverted.";
 		}
 	}
 	
