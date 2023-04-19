@@ -42,21 +42,46 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var Variable5 = 0;
 	var FinalVariable = 0;
 	
-	function sumVariables()
+	function defineVariable1()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable1 = parseFloat(document.getElementById("Question1").value); console.log(Variable1)
+    		Variable1 = parseFloat(document.getElementById("Question1").value); console.log(Variable1);	
+	}
+	
+	function defineVariable2()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		Variable2 = parseFloat(document.getElementById("Question2").value); console.log(Variable2);	
+	}
+	
+	function defineVariable3()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		Variable3 = parseFloat(document.getElementById("Question3").value); console.log(Variable3);	
+	}
+	
+	function defineVariable4()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		Variable4 = parseFloat(document.getElementById("Question4").value); console.log(Variable4);	
+	}
+
+	function defineVariable5()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		Variable5 = parseFloat(document.getElementById("Question5").value); console.log(Variable5);	
+	}
+	
+	function defineVariable2()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		Variable1 = parseFloat(document.getElementById("Question1").value); 
     		Variable2 = parseFloat(document.getElementById("Question2").value);
 		Variable3 = parseFloat(document.getElementById("Question3").value);
     		Variable4 = parseFloat(document.getElementById("Question4").value);
 		Variable5 = parseFloat(document.getElementById("Question5").value);
 		
 		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5; 
-		
-	}
-	
-	function printResults() 
-	{
 		
 		if(FinalVariable <= 10) {
 			document.getElementById("output").innerHTML = "You are very introverted";
