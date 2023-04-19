@@ -48,19 +48,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     		Variable1 = parseFloat(document.getElementById("Question1").value);
     		Variable2 = parseFloat(document.getElementById("Question2").value);
 		Variable3 = parseFloat(document.getElementById("Question3").value);
-    		Variable4 = parseFloat(document.getElementById("fourthInputBox").value);
-		Variable5 = parseFloat(document.getElementById("fifthInputBox").value);
+    		Variable4 = parseFloat(document.getElementById("Question4").value);
+		Variable5 = parseFloat(document.getElementById("Question5").value);
 		
-		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8
+		FinalVariable = Variable1 + Variable2 + Variable3 + Variable4 + Variable5
 		
-		if(FinalVariable >= 25) {
+		if(FinalVariable <= 10) {
 			document.getElementById("output").innerHTML = "You are very introverted"
 		console.log("Function was run."); 
-		} else if (FinalVariable >50) {
+		} else if (FinalVariable <=20) {
 			document.getElementById("output").innerHTML = "You are moderately introverted"
-		} else if (FinalVariable <50) {
+		} else if (FinalVariable <30) {
+			document.getElementById("output").innerHTML = "Surprise! You are an ambivert, which is somewhere in between!"
+		} else if (FinalVariable >=30) {
 			document.getElementById("output").innerHTML = "You are moderately extroverted"
-		} else if (FinalVariable =<50) {
+		} else if (FinalVariable >=40) {
 			document.getElementById("output").innerHTML = "You are very extroverted."
 		}
 	}
@@ -73,9 +75,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var Variable3 = 0;
 	var Variable4 = 0;
 	var Variable5 = 0;
-	var Variable6 = 0;
-	var Variable7 = 0;
-	var Variable8 = 0;
 	var FinalVariable = 0;
 		
 	}
@@ -148,7 +147,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
       
-  <a href="#two" onclick="exampleFunction1();" class="w3-btn w3-grey">Next Question!</a>
+  <a href="#two" class="w3-btn w3-grey">Next Question!</a>
     
   </center>
 	  </div>  
@@ -178,7 +177,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
       
-  <a href="#three" onclick="exampleFunction1();" class="w3-btn w3-grey">Easy! Next one!</a>
+  <a href="#three" class="w3-btn w3-grey">Easy! Next one!</a>
     
   </center>
 	  </div>  
@@ -205,7 +204,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
       
-  <a href="#four" onclick="exampleFunction1();" class="w3-btn w3-grey">Next Question</a>
+  <a href="#four" class="w3-btn w3-grey">Next Question</a>
     
   </center>
 	  </div>  
@@ -227,7 +226,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <button>submit</button>
 </form>
       
-  <a href="#five" onclick="exampleFunction1();" class="w3-btn w3-grey">Press to move forward!</a>
+  <a href="#five" class="w3-btn w3-grey">Press to move forward!</a>
     
   </center>
 	  </div>  
@@ -254,7 +253,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
       
-  <a href="#last" onclick="exampleFunction1();" class="w3-btn w3-grey">Ready for your results?</a>
+  <a href="#last" class="w3-btn w3-grey">Ready for your results?</a>
     
   </center>
 	  </div>  
