@@ -67,7 +67,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function defineVariable3()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable3 = parseFloat(document.getElementById("Question3").value); console.log(Variable3);	
+    		if(document.getElementById("question2optionA").checked == true){	Variable3 = 0;		}
+		else if(document.getElementById("question2optionB").checked == true){ 	Variable3 = 3;		}
+		else if(document.getElementById("question2optionC").checked == true){	Variable3 = 6;		}
+		else{ 									Variable3 = 10; 	}
+		console.log(Variable3);
 	}
 	
 	function defineVariable4()
@@ -84,7 +88,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function defineVariable5()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable5 = parseFloat(document.getElementById("Question5").value); console.log(Variable5);	
+    		if(document.getElementById("question2optionA").checked == true){	Variable5 = 0;		}
+		else if(document.getElementById("question2optionB").checked == true){ 	Variable5 = 5;		}
+		else{ 									Variable5 = 10; 	}
+		console.log(Variable5);
 	}
 	
 	function sumVariables()
