@@ -56,7 +56,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function defineVariable2()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable2 = parseFloat(document.getElementById("Question2").value); console.log(Variable2);	
+    		if(document.getElementById("question2optionA").checked == true){	Variable2 = 0;		}
+		else if(document.getElementById("question2optionB").checked == true){ 	Variable2 = 2.5;	}
+		else if(document.getElementById("question2optionC").checked == true){	Variable2 = 5;		}
+		else if(document.getElementById("question2optionD").checked == true){	Variable2 = 7.5; 	}
+		else{ 									Variable2 = 10; 	}
+		console.log(Variable1);
 	}
 	
 	function defineVariable3()
