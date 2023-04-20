@@ -45,7 +45,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function defineVariable1()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		Variable1 = parseFloat(document.getElementById("Question1").value); console.log(Variable1);	
+    		if(document.getElementById("question1optionA").checked = true){		Variable1 = 0;		}
+		else if(document.getElementById("question1optionB".checked = true){ 	Variable1 = 2.5;	}
+		else if(document.getElementById("question1optionC".checked = true){	Variable1 = 5;		}
+		else if(document.getElementById("question1optionD".checked = true){	Variable1 = 7.5; 	}
+		else{ 									Variable1 = 10; 	}
+		console.log(Variable1);
 	}
 	
 	function defineVariable2()
@@ -168,11 +173,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 <form>
-  <input type="radio" id="Question1" value="0">They make me exhausted; I usually want to leave immediately<br>
-  <input type="radio" id="Question1" value="2.5">They make me a little tired, but I can usually tolerate it<br>
-  <input type="radio" id="Question1" value="5">They do not really affect me<br>
-  <input type="radio" id="Question1" value="7.5">They make me feel pretty alert and awake<br>
-  <input type="radio" id="Question1" value="10">I never feel more alive and energetic than when at social events<br>
+  <input type="radio" name="Question1" id="question1optionA">They make me exhausted; I usually want to leave immediately<br>
+  <input type="radio" name="Question1" id="question1optionB">They make me a little tired, but I can usually tolerate it<br>
+  <input type="radio" name="Question1" id="question1optionC">They do not really affect me<br>
+  <input type="radio" name="Question1" id="question1optionD">They make me feel pretty alert and awake<br>
+  <input type="radio" name="Question1" id="question1optionE">I never feel more alive and energetic than when at social events<br>
 </form>
 		<br><br><br>
 	</form>
@@ -197,11 +202,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Form element. This allows for user input in HTML.-->
 	  
 <form>
-  <input type="radio" id="Question2" value="0">I don't talk because I overthink my words<br>
-  <input type="radio" id="Question2" value="2.5">I usually think before speaking, unless I am with friends or someone that I am comfortable with <br>
-  <input type="radio" id="Question2" value="5">It really just depends on the context<br>
-  <input type="radio" id="Question2" value="7.5">Not much if at all.<br>
-  <input type="radio" id="Question2" value="10">Never! Why would I do that?<br>
+  <input type="radio" name="Question2" id="question2optionA">I don't talk because I overthink my words<br>
+  <input type="radio" name="Question2" id="question2optionB">I usually think before speaking, unless I am with friends or someone that I am comfortable with <br>
+  <input type="radio" name="Question2" id="question2optionC">It really just depends on the context<br>
+  <input type="radio" name="Question2" id="question2optionD">Not much if at all.<br>
+  <input type="radio" name="Question2" id="question2optionE">Never! Why would I do that?<br>
 </form>
 		
 		<br><br><br>
@@ -226,10 +231,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 <form>
-  <input type="radio" id="Question3" value="0">I prefer to spend time alone and think it through by myself<br>
-  <input type="radio" id="Question3" value="3">I like to think about it and occasionally ask some people for their opinions<br>
-  <input type="radio" id="Question3" value="6">I usually rely on my friends for some advice<br>
-  <input type="radio" id="Question3" value="10">I absolutely NEED to be surrounded by friends and hear what they have to say<br>
+  <input type="radio" name="Question3" id="question3optionA">I prefer to spend time alone and think it through by myself<br>
+  <input type="radio" name="Question3" id="question3optionB">I like to think about it and occasionally ask some people for their opinions<br>
+  <input type="radio" name="Question3" id="question3optionC">I usually rely on my friends for some advice<br>
+  <input type="radio" name="Question3" id="question3optionD">I absolutely NEED to be surrounded by friends and hear what they have to say<br>
 </form>	
 		<br><br><br>
 	</form>
@@ -252,11 +257,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 	  
 <form>
-  <input type="radio" id="Question4" value="0">Very! Why do we bother? It is terrible!<br>
-  <input type="radio" id="Question4" value="2.5">Quite a bit. I try to avoid it at most costs<br>
-  <input type="radio" id="Question4" value="5">Not much at all, but I still don't prefer small talk<br>
-  <input type="radio" id="Question4" value="7.5">Only a little; sometimes it feels awkward<br>
-  <input type="radio" id="Question4" value="10">Not at all! It is a chill way to talk to someone new<br>
+  <input type="radio" name="Question4" id="question4optionA">Very! Why do we bother? It is terrible!<br>
+  <input type="radio" name="Question4" id="question4optionB">Quite a bit. I try to avoid it at most costs<br>
+  <input type="radio" name="Question4" id="question4optionC">Not much at all, but I still don't prefer small talk<br>
+  <input type="radio" name="Question4" id="question4optionD">Only a little; sometimes it feels awkward<br>
+  <input type="radio" name="Question4" id="question4optionE">Not at all! It is a chill way to talk to someone new<br>
 </form>
 		<br><br><br>
 	</form>
@@ -280,9 +285,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<!--Form element. This allows for user input in HTML.-->
 	<form>
-	  <input type="radio" id="Question5" value="0">I am leaning towards introversion<br>
-	  <input type="radio" id="Question5" value="5">I honestly cannot tell...<br>
-	  <input type="radio" id="Question5" value="10">Definitely an Extrovert!<br>
+	  <input type="radio" name="Question5" id="question5optionA">I am leaning towards introversion<br>
+	  <input type="radio" name="Question5" id="question5optionB">I honestly cannot tell...<br>
+	  <input type="radio" name="Question5" id="question5optionC">Definitely an Extrovert!<br>
 	</form>
 
 		<br><br><br>
